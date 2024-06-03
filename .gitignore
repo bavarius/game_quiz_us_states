@@ -162,4 +162,4 @@ cython_debug/
 .idea/
 
 # Files generated inside quiz game
-states_to_learn.csv
+states_to_learn.*
