@@ -24,7 +24,7 @@ while keep_going:
     if answer_state is None:  # Cancel - Button pressed
         keep_going = False
         # write states that were not guessed to output file
-        output_text = f"You didn't guess these {len(all_states)} states:\n{'\n'.join(all_states)}\n"
+        output_text = "You didn't guess these {} states:\n{}\n".format(len(all_states), '\n'.join(all_states))
         print(output_text)
         with open(OUTPUT_FILE, 'a') as f:
             f.write(output_text)
